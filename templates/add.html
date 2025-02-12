@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h2>Add a new task</h2>
+    <form action="/success" method="get">
+        <div class="grid">
+            <input type="text" autofocus autocomplete="off"
+            placeholder="Enter your task" name="task" id="task">
+            <input type="date" name="task-date">
+        </div>
+        <button type="submit">Add Task</button>
+    </form>
+{% endblock %}

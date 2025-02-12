@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h2>Today's Tasks</h2>
+    <ul>
+        {% for i in range(num_items) %}
+            <li>{{ todos_list[i] }} - {{ task_dates[i] }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

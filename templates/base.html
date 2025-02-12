@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>My TODO App</title>
+  </head>
+  <body>
+    <main class="container">
+      <nav>
+        <ul>
+          <li><strong>Fishel's Todo's</strong></li>
+        </ul>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/add">Add a Task</a></li>
+          <li><a href="/show">Show Tasks</a></li>
+        </ul>
+      </nav>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
